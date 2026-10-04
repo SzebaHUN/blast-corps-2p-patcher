@@ -1,0 +1,56 @@
+# ---- Never publish ROMs, saves, emulator state or dumps ----
+*.z64
+*.n64
+*.v64
+*.rom
+*.ndd
+*.d64
+*.mpk
+*.srm
+*.sra
+*.eep
+*.fla
+*.sav
+*.state
+*.st
+*.st[0-9]
+*.pj
+*.pj[0-9]
+*.bak
+*.dmp
+
+# Private ROM / save / runtime directories (maintainer workspace)
+emu/
+roms/
+ROM/
+private/
+saves/
+Save/
+runtime/
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+secrets*
+credentials*
+
+# Build outputs (the .exe is attached to GitHub Releases instead)
+release/
+build_tmp/
+dist/
+build/
+*.spec
+*.zip
+__pycache__/
+*.pyc
+
+# Public repo is binary/docs only: never commit patcher source or patch data
+src/
+Sites/
+*.py
+*.bat
+*.bps
+*.ips
+*.exe
